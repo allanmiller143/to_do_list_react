@@ -1,23 +1,23 @@
-.task-list{
+.task-list {
   width: 90%;
-  max-width:700px;
+  max-width: 700px;
   margin: 0 auto;
+  overflow: hidden; /* Adiciona overflow: hidden para evitar alterações no layout ao exibir a barra de rolagem */
 }
 
-.task-list-divider{
-  max-height:260px ;
+.task-list-divider {
+  max-height: 260px;
   height: 100%;
-  overflow-y: scroll ;
-  border-radius: 5px;
+  width: 100%;
+  overflow-y: auto; /* Use overflow-y: auto para mostrar a barra de rolagem apenas quando necessário */
+  overflow-x: hidden;
   padding: 10px;
-
 }
 
-.task-list-title{
+.task-list-title {
   text-align: start;
   padding-bottom: 5px;
   padding-top: 5px;
   margin-left: 10px;
- 
   border-top: 1px solid #ccc;
 }

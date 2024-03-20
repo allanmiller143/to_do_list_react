@@ -4,7 +4,7 @@ import './TaskList.css';
 import AppContext from '../../context/AppContext';
 
 function TaskList() {
-  const { taskList, setTaskList, setFilteredTaskList,filteredTaskList, dropdownFilterValue} = useContext(AppContext);
+  const { taskList, setTaskList, setFilteredTaskList,filteredTaskList, dropdownFilterValue,searchActivated} = useContext(AppContext);
   
   useEffect(() => {
     const tasks = [
@@ -44,7 +44,7 @@ function TaskList() {
       <div className="task-list-divider">
 
         {
-          dropdownFilterValue === 'Todas' ?
+          dropdownFilterValue === 'Todas' &&  searchActivated === false ?
             taskList.map(todo => (
               <Task key={todo.id} data={todo} />
             )) :

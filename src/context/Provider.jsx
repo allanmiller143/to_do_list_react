@@ -7,6 +7,7 @@ function Provider({ children }) {
   const [taskList, setTaskList] = useState([]);
   const [filteredTaskList, setFilteredTaskList] = useState([]);
   const [dropdownFilterValue, setDropdownFilterValue] = useState('Todas');
+  const [searchActivated, setsearchActivated] = useState(false);
   const [newTask, setNewTask] = useState({});
 
   const value = {
@@ -17,7 +18,9 @@ function Provider({ children }) {
     filteredTaskList,
     setFilteredTaskList,
     dropdownFilterValue,
-    setDropdownFilterValue
+    setDropdownFilterValue,
+    searchActivated,
+    setsearchActivated
   };
 
   return (

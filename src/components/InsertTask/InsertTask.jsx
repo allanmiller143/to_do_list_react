@@ -6,7 +6,7 @@ import AppContext from '../../context/AppContext';
 function InsertTask() {
   const [inputValue, setInputValue] = useState('');
   const [dropdownValue, setDropdownValue] = useState('Selecione'); // Inicialize o dropdownValue com um valor padrão, se necessário
-  const {setNewTask, taskList, setTaskList} = useContext(AppContext);
+  const {setNewTask, taskList, setTaskList, filteredTaskList, setFilteredTaskList,dropdownFilterValue} = useContext(AppContext);
 
   const itens = [ 
     { value: '0', label: 'Selecione' },
@@ -50,8 +50,11 @@ function InsertTask() {
         isCompleted: false
       };
       setNewTask(newTask);
+      if(dropdownFilterValue != 'Completas'){
+        setFilteredTaskList([...filteredTaskList, newTask]);
+      }
+      
       setTaskList([...taskList, newTask]);
-      setDropdownValue('Selecione');
       setInputValue('');
     }
     else{
