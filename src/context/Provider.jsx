@@ -5,13 +5,19 @@ import {useState} from 'react';
 
 function Provider({ children }) {
   const [taskList, setTaskList] = useState([]);
+  const [filteredTaskList, setFilteredTaskList] = useState([]);
+  const [dropdownFilterValue, setDropdownFilterValue] = useState('Todas');
   const [newTask, setNewTask] = useState({});
 
   const value = {
     newTask,
     setNewTask,
     taskList,
-    setTaskList
+    setTaskList,
+    filteredTaskList,
+    setFilteredTaskList,
+    dropdownFilterValue,
+    setDropdownFilterValue
   };
 
   return (

@@ -4,7 +4,7 @@ import './TaskList.css';
 import AppContext from '../../context/AppContext';
 
 function TaskList() {
-  const { taskList, setTaskList } = useContext(AppContext);
+  const { taskList, setTaskList, setFilteredTaskList,filteredTaskList, dropdownFilterValue} = useContext(AppContext);
   
   useEffect(() => {
     const tasks = [
@@ -35,15 +35,25 @@ function TaskList() {
     ];
 
     setTaskList(tasks);
+    setFilteredTaskList(tasks);
   }, []); // Deps vazia para garantir que o efeito seja executado apenas uma vez
   
   return (
     <div className="task-list">
       <p className="task-list-title">Tarefas</p>
       <div className="task-list-divider">
-        {taskList.map(todo => (
-          <Task key={todo.id} data={todo} />
-        ))}
+
+        {
+          dropdownFilterValue === 'Todas' ?
+            taskList.map(todo => (
+              <Task key={todo.id} data={todo} />
+            )) :
+            filteredTaskList.map(todo => (
+              <Task key={todo.id} data={todo} />
+            ))
+        }
+
+        
       </div>
     </div>
   );

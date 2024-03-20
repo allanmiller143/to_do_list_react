@@ -23,6 +23,7 @@ function InsertTask() {
     const selectedValue = event.target.value;
     const selectedLabel = itens.find(item => item.value === selectedValue)?.label;
     setDropdownValue(selectedLabel);
+    
   };
 
   const calculateTaskId = () => {
@@ -40,10 +41,6 @@ function InsertTask() {
     // Retorna o próximo ID disponível (maior ID + 1)
     return maxId + 1;
   };
-  
-
-
-
   const handleSubmit = () => {
     if(dropdownValue != 'Selecione' && inputValue != '') {
       const newTask = {
