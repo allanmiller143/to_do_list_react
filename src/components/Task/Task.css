@@ -22,7 +22,13 @@
   font-weight: 500;
   font-size: 15px;
   color: rgb(0, 0, 0,0.9);
+
 }
+
+.completed{
+  text-decoration: line-through rgba(113, 106, 106, 0.9); /* Adiciona o risco (linha através do texto) */
+}
+
 
 .task__content__category{
   font-size: 12px;  
@@ -35,7 +41,7 @@
 
 .task__actions__complete{
   background-color: transparent;
-  background-color: rgb(46, 160, 76);
+  background-color: rgb(67, 148, 29);
   border: none;
   cursor: pointer;
   color: rgb(255, 255, 255);
@@ -45,7 +51,7 @@
 
 .task__actions__delete{
   background-color: transparent;
-  background-color: rgb(255, 0, 0);
+  background-color: rgba(255, 0, 0, 0.761);
   border: none;
   cursor: pointer;
   color: rgb(255, 255, 255);
