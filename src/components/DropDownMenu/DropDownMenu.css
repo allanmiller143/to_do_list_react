@@ -1,0 +1,35 @@
+.form-label{
+  font-size: 15px;
+}
+
+.dropDownMenu{
+  background-color: beige;
+  width: 50%;
+  max-width: 250px;
+  border-radius: 5px;
+  padding: 0px 0px 0px 10px ;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 1px 1px rgb(232, 230, 230);
+
+}
+
+.form-select{
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.form-select option {
+  background-color: #fff; /* Cor de fundo das opções */
+  color: #333; /* Cor do texto das opções */
+  padding: 20px; /* Espaçamento interno das opções */
+  font-size: 12px; /* Tamanho da fonte das opções */
+  padding: 10px;
+  cursor: pointer;
+}
+

@@ -1,0 +1,22 @@
+.task-list{
+  width: 90%;
+  max-width:700px;
+  margin: 0 auto;
+}
+
+.task-list-divider{
+  height: 260px;
+  overflow-y: scroll ;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+
+.task-list-title{
+  text-align: start;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-left: 10px;
+ 
+  border-top: 1px solid #ccc;
+}

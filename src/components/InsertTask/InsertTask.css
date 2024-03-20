@@ -1,0 +1,70 @@
+.insert__task{
+  width: 90%;
+  max-width:700px;
+  margin: 0 auto;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 15px;
+}
+
+.insert__task__title{
+  font-size: 20px;
+  font-weight: bold;
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
+.select__task{
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  align-items: end;
+  justify-content: space-between;
+  padding-bottom: 10px;
+
+
+}
+.select__task__type{
+  border: none;
+  background-color: transparent;
+  padding: 10px 10px 10px 0px;
+  outline: none;
+  cursor: pointer;
+}
+
+.insert__task__input{
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  padding-left: 10px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: beige;
+  gap: 5px;
+}
+
+.insert__task__input__container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  gap: 5px;
+}
+
+.insert__task__label{
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.insert__task__button{
+  border: none;
+  background-color: rgb(67, 148, 29);
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}

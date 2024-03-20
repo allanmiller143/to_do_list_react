@@ -1,0 +1,18 @@
+.filter{
+  width: 90%;
+  max-width:700px;
+  margin: 0 auto;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 15px;
+}
+.dropdown__itens{
+  display: flex;
+  justify-content: space-between;
+}
+.filter__title{
+  border-top: 1px solid #ccc;
+  padding-top: 5px;
+}
